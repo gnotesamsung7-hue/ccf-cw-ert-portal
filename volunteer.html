@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<title>Volunteer Portal | CCF CW ERT</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="js/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #0b0f19; }
+  ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #374151; }
+  :focus-visible { outline: 2px solid #ef4444; outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { .animate-pulse, .animate-spin { animation: none; } }
+</style>
+</head>
+<body data-role="vol" class="bg-darkBg text-slate-100 min-h-screen flex flex-col antialiased selection:bg-red-500 selection:text-white">
+<div id="app" class="flex-1 flex flex-col"></div>
+<div id="modal"></div>
+<div id="toast" role="status" aria-live="polite" class="fixed bottom-6 right-6 bg-slate-900 border border-slate-800 text-white px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 translate-y-24 opacity-0 transition-all duration-300 z-[60] text-xs max-w-sm"></div>
+<script src="js/config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/volunteer.js"></script>
+<script>boot();</script>
+</body>
+</html>
